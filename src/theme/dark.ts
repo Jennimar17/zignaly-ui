@@ -1,6 +1,7 @@
 import Theme from "./theme";
 
 const dark: Theme = {
+  white: "#FFFFFF",
   neutral800: "#06061A",
   neutral750: "#101225",
   neutral700: "#252339",
@@ -27,7 +28,7 @@ const dark: Theme = {
   darkSpecial: "#0b0d1a",
   avatarBack: "#F3F4F6",
   gradient1: "#",
-  gradient2: "#",
+  gradient2: "linear-gradient(312.12deg, #8671F7 14.16%, #7EC9F9 83.59%)",
   gradient3: "#",
   errorToasterBg: "#231630",
   errorToasterBorder: "#321E46",

@@ -1,6 +1,7 @@
 import Theme from "./theme";
 
 const light: Theme = {
+  white: "#FFFFFF",
   neutral800: "#06061A",
   neutral750: "#101225",
   neutral700: "#252339",
@@ -20,7 +21,7 @@ const light: Theme = {
   links: "#26C4C1",
   yellow: "#AE9C5B",
   red: "#CC394E",
-  tertiaryButton: "#",
+  tertiaryButton: "# ",
   formInputBack: "#",
   formSelectBack: "#",
   dropDownBackbround: "#12152C",

@@ -32,7 +32,7 @@ export const AreaChart = ({ data, variant, midLine }: ChartsProps) => {
 };
 
 const SmallChart = ({ data, isGreen, midLine }: ChartInput) => {
-  const strokeColor = isGreen ? "#18ED90" : "red";
+  const strokeColor = isGreen ? "#18ED90" : "#CC3993";
 
   return (
     <VictoryGroup>
@@ -65,7 +65,7 @@ const SmallChart = ({ data, isGreen, midLine }: ChartInput) => {
 };
 
 const LargeChart = ({ data, isGreen, midLine }: ChartInput) => {
-  const strokeColor = isGreen ? "#18ED90" : "red";
+  const strokeColor = isGreen ? "#18ED90" : "#CC3993";
 
   return (
     <VictoryChart domainPadding={{ x: [0, -10], y: 5 }} domain={{ y: [0, 35] }}>
@@ -107,7 +107,7 @@ const GraphColor = ({ isGreen }: { isGreen: boolean }) => {
           <defs>
             <linearGradient id="gradient" x1="1%" y1="100%" x2="0%" y2="0%">
               <stop offset="0%" stopColor="rgba(17, 27, 47, 0)" />
-              <stop offset="49%" stopColor="rgba(22, 41, 67, 0.5)" />
+              <stop offset="50%" stopColor="rgba(22, 41, 67, 0.5)" />
               <stop offset="100%" stopColor="rgba(39, 110, 107, 1)" />
             </linearGradient>
           </defs>
@@ -115,9 +115,10 @@ const GraphColor = ({ isGreen }: { isGreen: boolean }) => {
       ) : (
         <svg>
           <defs>
-            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="34%" stopColor="rgba(204, 57, 147, 0.25)" />
-              <stop offset="100%" stopColor="rgba(204, 57, 147, 0)" />
+            <linearGradient id="gradient" x1="1%" y1="100%" x2="0%" y2="0%">
+              <stop offset="0" stopColor="rgba(18, 20, 39, 0)" />
+              <stop offset="50%" stopColor="rgba(21, 21, 57, 0.5)" />
+              <stop offset="100%" stopColor="rgba(86, 36, 108, 1)" />
             </linearGradient>
           </defs>
         </svg>
